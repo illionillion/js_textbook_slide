@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No01</title>
+    <style>
+        h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="target" style="color: red;">Hello World</h1>
+    <script>
+        document.getElementById("target").onclick=function(){
+            document.getElementById("target").innerHTML="Hello JavaScript";
+            document.getElementById("target").style="color:blue;";
+        };
+    </script>
+</body>
+</html>
