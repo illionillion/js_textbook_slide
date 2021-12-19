@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countapp01</title>
+</head>
+<body>
+    <input type="button" value="カウント" id="countbtn">
+    <script>
+
+        // クリックした値を保存する変数
+        let count=0;
+
+        // inputタグのボタンを押した場合の処理
+        document.getElementById("countbtn").onclick=function(){
+            count=count+1;//代入
+            // count++; //インクリメントさせる方法
+            // count+=1; //別の代入方法
+            console.log(count);
+        }
+
+        // その他の記述方法
+        // document.getElementById("countbtn").addEventListener("click",()=>{count++;console.log(count);})
+        // document.getElementById("countbtn").addEventListener("click",function(){count++;console.log(count);})
+        // document.getElementById("countbtn").onclick=()=>{count++;console.log(count);}
+
+    </script>
+</body>
+</html>
